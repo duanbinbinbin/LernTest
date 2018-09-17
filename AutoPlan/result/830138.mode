@@ -1,0 +1,143 @@
+
+[F431_gs_1]
+subplanid = 83013801
+note = 亞洲12日上網卡
+addtime              =	 *			
+feetypes             =	 10000000	
+gtfavortype          =	 8			
+billrebillflag       =	 1			
+system_types         =	 gg,gs		
+ltfavortype          =	 8			
+AOC_flag             =	 1 			
+Main_ProdId_Params   =	 *			
+thresholdval         =	 999999999	
+gtfavorcap           =	 0			
+user_brands          =	 oy
+adjust               =	 11			
+thresholdtype        =	 3			
+accumulateID         =	 83013801
+cross_flag           =	 0			
+units                =	 1024		
+warnflag             =	 0			
+roam_types           =	 *
+visit_area_codes     =   856,84,852,853,886,81,82,65,66,60,62,63,855,95
+ltfavorcap           =	 0			
+
+
+[t_pp_subprcplan_1]
+feeplanid            =	 F431				
+attr                 =	 0A000				
+eff_date             =	 20180701000000
+audit_flag           =	 0					
+subbillprcid         =	 83013801
+note                 =	 亞洲12日上網卡
+suboperation         =	 gg,gs				
+exp_date             =	 20500101000000		
+type                 =	 1					
+
+
+[t_pp_billprcplan_1]
+priority             =	 1					
+billprcfavtype       =	 g					
+billprcsubtype       =	 gg,gs				
+billprcid            =	 830138
+eff_date             =	 20180701000000		
+billprctype          =	 1
+note                 =	 XGLT-20180718171744355亞洲12日上網卡
+prcexpr              =	 83013801			
+exp_date             =	 20500101000000		
+subpriority          =	 25
+billtype             =	 1					
+audit_flag           =	 0					
+billprcname          =	 830138
+attr                 =	 0A000				
+
+
+[t_pp_mainprodprc_brand_1]
+note                 =	 XGLT-20180718171744355亞洲12日上網卡
+prod_prcid_param     =	 830138				
+user_brand           =	 oy					
+billprcid            =	 830138				
+prod_prcid           =	 HKPMF4DAP004U12		
+
+
+[result_code_replace_1]
+old_result_code      =	 4012				
+note                 =	 830138,XGLT-20180718171744355亞洲12日上網卡余额不足结果码4012替换为无语音提示的4010
+new_result_code      =	 4010				
+prod_prcid           =	 HKPMF4DAP004U12		
+
+[result_code_replace_2]
+old_result_code      =	 4202				
+note                 =	 830138,XGLT-20180718171744355亞洲12日上網卡4202替换为4204
+new_result_code      =	 4204				
+prod_prcid           =	 HKPMF4DAP004U12		
+
+[result_code_replace_3]
+old_result_code      =	 2203				
+note                 =	 830138,XGLT-20180718171744355亞洲12日上網卡2203替换为2001
+new_result_code      =	 2001				
+prod_prcid           =	 HKPMF4DAP004U12		
+
+
+[short_term_product_1]
+prod_prcid           =	 HKPMF4DAP004U12		
+
+
+[sbillmodedetail_1]
+region_code          =	 0						
+time_flag            =	 0           
+mode_code            =	 830138					
+eff_time             =	 20180701000000
+detail_type          =	 0						
+detail_code          =	 830138      
+begin_time           =	 20180701000000
+fav_order            =	 1           
+exp_time             =	 20500101000000
+owner_type           =	 0           
+mode_time            =	 0           
+end_time             =	 20500101000000
+
+[sbillmodedetail_2]
+region_code          =	 0						
+time_flag            =	 0           
+mode_code            =	 830138					
+eff_time             =	 20180701000000
+detail_type          =	 1
+detail_code          =	 468800721      
+begin_time           =	 20180701000000
+fav_order            =	 1           
+exp_time             =	 20500101000000
+owner_type           =	 0           
+mode_time            =	 0           
+end_time             =	 20500101000000
+
+
+[pd_transprodprc_1]
+note                 =	 XGLT-20180718171744355亞洲12日上網卡
+user_prc             =	 HKPMF4DAP004U12			
+state                =	 0						
+region_code          =	 0						
+pricing_id           =	 468800721
+prod_prc             =	 830138					
+
+
+[t_pp_fav_index_1]
+free_type            =	 001000				
+unit_code            =	 4
+free_sum             =	 999999999
+period               =	 0					
+bill_code            =	 0					
+exp_date             =	 20500101000000		
+busi_code            =	 3
+remind_code          =	 0					
+cycle_day            =	 12
+fee_rate             =	 0					
+fav_index            =	 83013801			
+fav_type             =	 830138				
+eff_date             =	 20180701000000		
+other_fav_index      =	 
+fav_code             =	 D
+cycle_type           =	 1
+location             =	 t
+

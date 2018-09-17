@@ -1,0 +1,123 @@
+
+[F478_gs_1]
+subplanid = WG3031HM
+note = 中港數據共享3TB套餐 (海外專用)普通成员
+3favorcap            =	 0           
+2favorcap            =	 0           
+addtime              =	 *			
+3favortype           =	 8           
+1favortype           =	 8			
+1thresholdval        =	 3145728		
+service_codes        =	 *			
+adjust               =	 1			
+billrebillflag       =	 1			
+system_types         =	 gg,gs		
+2favortype           =	 8           
+Main_ProdId_Params   =	 * 			
+count_value          =	 3			
+user_brands          =	 *			
+feetypes             =	 10000000	
+1favorcap            =	 0			
+accumulateID         =	 WG3031HM	
+area_codes           =	 *			
+units                =	 1048576	
+thresholdtype        =	 3			
+roam_types           =	 1,2,3,A,B	
+2thresholdval        =	 999999999   
+user_types           =	 *			
+
+
+[t_pp_subprcplan_1]
+feeplanid            =	 F478				
+attr                 =	 00000				
+eff_date             =	 20180701000000		
+audit_flag           =	 0					
+subbillprcid         =	 WG3031HM			
+note                 =	 中港數據共享3TB套餐 (海外專用)普通成员
+suboperation         =	 gg,gs				
+exp_date             =	 20500101000000		
+type                 =	 1					
+
+
+[t_pp_billprcplan_1]
+priority             =	 1					
+billprcfavtype       =	 g					
+billprcsubtype       =	 gg,gs				
+billprcid            =	 WG3031				
+eff_date             =	 20180701000000		
+billprctype          =	 1					
+note                 =	 XGLT-20180724164216878-中港數據共享3TB套餐 (海外專用)普通成员
+prcexpr              =	 WG3031HM			
+exp_date             =	 20500101000000		
+subpriority          =	 10					
+billtype             =	 1					
+audit_flag           =	 0					
+billprcname          =	 WG3031				
+attr                 =	 00000				
+
+
+[t_pp_fav_index_1]
+free_type            =	 001000				
+unit_code            =	 6
+free_sum             =	 999999999
+period               =	 0					
+bill_code            =	 0					
+exp_date             =	 20500101000000		
+busi_code            =	 3
+remind_code          =	 0					
+cycle_day            =	 0					
+fee_rate             =	 0					
+fav_index            =	 WG3031HM			
+fav_type             =	 WG3031				
+eff_date             =	 20180701000000		
+other_fav_index      =	 
+fav_code             =	 1					
+cycle_type           =	 0					
+location             =	 e					
+
+
+[pd_transprodprc_1]
+note                 =	 XGLT-20180724164216878-中港數據共享3TB套餐 (海外專用)普通成员
+user_prc             =	 JPPMS4DCKPO03AA		
+state                =	 0						
+region_code          =	 0						
+pricing_id           =	 468601781				
+prod_prc             =	 WG3031
+
+
+[t_pp_mainprodprc_brand_1]
+note                 =	 XGLT-20180724164216878-中港數據共享3TB套餐 (海外專用)普通成员
+prod_prcid_param     =	 WG3031			
+user_brand           =	 oh
+billprcid            =	 WG3031			
+prod_prcid           =	 JPPMS4DCKPO03AA	
+
+
+[sbillmodedetail_1]
+region_code          =	 0						
+time_flag            =	 0           
+mode_code            =	 WG3031					
+eff_time             =	 20180701000000
+detail_type          =	 0						
+detail_code          =	 WG3031      
+begin_time           =	 20180701000000
+fav_order            =	 1           
+exp_time             =	 20500101000000
+owner_type           =	 0           
+mode_time            =	 0           
+end_time             =	 20500101000000
+
+[sbillmodedetail_2]
+region_code          =	 0						
+time_flag            =	 0           
+mode_code            =	 WG3031					
+eff_time             =	 20180701000000
+detail_type          =	 1						
+detail_code          =	 468601781      
+begin_time           =	 20180701000000
+fav_order            =	 1           
+exp_time             =	 20500101000000
+owner_type           =	 0           
+mode_time            =	 0           
+end_time             =	 20500101000000
+

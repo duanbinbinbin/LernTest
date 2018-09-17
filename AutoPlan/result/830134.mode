@@ -1,0 +1,467 @@
+
+[F101_vc_1]
+subplanid = 83013401
+note = 于日本主叫日本,$1/min;
+billrebillflag       =	 1
+system_types         =	 vc
+dial_types           =	 *
+Main_ProdId_Params   =	 *
+favorcap             =	 1000
+fee_types            =	 I,0
+user_brands          =	 oy
+feetypes             =	 10000000
+favortype            =	 8
+units                =	 60
+chat_types           =	 *
+roam_types           =	 I,0
+call_types           =	 01
+service_codes        =	 *
+
+[F101_vc_2]
+subplanid = 83013402
+note = 于日本,韩国,中国内地,香港主叫中国内地，香港，$2/min;
+billrebillflag       =	 1
+system_types         =	 vc
+dial_types           =	 *
+Main_ProdId_Params   =	 *
+favorcap             =	 2000
+fee_types            =	 A,B
+user_brands          =	 oy
+feetypes             =	 10000000
+favortype            =	 8
+units                =	 60
+chat_types           =	 *
+roam_types           =	 1,2,3,A,B,J,I,0
+call_types           =	 01
+service_codes        =	 *
+
+[F101_vc_3]
+subplanid = 83013403
+note = 于韩国,主叫韩国,$1/min;
+billrebillflag       =	 1
+system_types         =	 vc
+dial_types           =	 *
+Main_ProdId_Params   =	 *
+favorcap             =	 1000
+fee_types            =	 J,0
+user_brands          =	 oy
+feetypes             =	 10000000
+favortype            =	 8
+units                =	 60
+chat_types           =	 *
+roam_types           =	 J,0
+call_types           =	 01
+service_codes        =	 *
+
+[F101_vc_4]
+subplanid = 83013404
+note = 于日本,韩国,中国内地,香港被叫,$1/min;
+billrebillflag       =	 1
+system_types         =	 vc
+dial_types           =	 *
+Main_ProdId_Params   =	 *
+favorcap             =	 1000
+fee_types            =	 *
+user_brands          =	 oy
+feetypes             =	 10000000
+favortype            =	 8
+units                =	 60
+chat_types           =	 *
+roam_types           =	 1,2,3,A,B,J,I,0
+call_types           =	 02
+service_codes        =	 *
+
+[F101_vc_5]
+subplanid = 14000701
+note = 漫游任何地方的语音标批资费，未订购二批资费，拒绝使用
+billrebillflag       =	 0
+system_types         =	 vc
+dial_types           =	 *
+Main_ProdId_Params   =	 830134
+favorcap             =	 0
+fee_types            =	 *
+user_brands          =	 *
+feetypes             =	 10000000
+favortype            =	 8
+units                =	 60
+chat_types           =	 *
+roam_types           =	 *
+call_types           =	 *
+service_codes        =	 *
+
+[t_pp_subprcplan_21]
+feeplanid            =	 F101
+attr                 =	 0000c
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 14000701
+note                 =	 漫游任何地方的语音标批资费，未订购二批资费，拒绝使用
+suboperation         =	 vc
+exp_date             =	 20500101000000
+type                 =	 0
+
+[t_pp_billprcplan_2]
+priority             =	 1
+billprcfavtype       =	 v
+billprcsubtype       =	 vc
+billprcid            =	 140007
+eff_date             =	 20180801000000
+billprctype          =	 4
+note                 =	 漫游任何地方的语音标批资费，未订购二批资费，拒绝使用
+prcexpr              =	 14000701
+exp_date             =	 20500101000000
+subpriority          =	 75
+billtype             =	 0
+audit_flag           =	 0
+billprcname          =	 140007
+attr                 =	 00000
+
+[F101_gs_1]
+subplanid = 14000501
+note = 漫游任何地方的数据标批资费，未订购二批资费，拒绝使用
+billrebillflag       =	 0
+system_types         =	 gg,gs
+Main_ProdId_Params   =	 830134
+favorcap             =	 0
+user_brands          =	 *
+feetypes             =	 10000000
+favortype            =	 8
+units                =	 1024
+roam_types           =	 *
+
+[t_pp_subprcplan_22]
+feeplanid            =	 F101
+attr                 =	 0000c
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 14000501
+note                 =	 漫游任何地方的数据标批资费，未订购二批资费，拒绝使用
+suboperation         =	 gg,gs
+exp_date             =	 20500101000000
+type                 =	 0
+
+[t_pp_billprcplan_3]
+priority             =	 1
+billprcfavtype       =	 g
+billprcsubtype       =	 gg,gs
+billprcid            =	 140005
+eff_date             =	 20180801000000
+billprctype          =	 8
+note                 =	 漫游任何地方的数据标批资费，未订购二批资费，拒绝使用
+prcexpr              =	 14000501
+exp_date             =	 20500101000000
+subpriority          =	 75
+billtype             =	 0
+audit_flag           =	 0
+billprcname          =	 140005
+attr                 =	 00000
+
+[F101_ss_1]
+subplanid = 83013421
+note = 于日本,韩国,中国内地,香港发送短信至任何地方,$1/min;
+billrebillflag       =	 1
+system_types         =	 ss
+Main_ProdId_Params   =	 *
+favorcap             =	 1000
+fee_types            =	 *
+user_brands          =	 oy
+feetypes             =	 10000000
+favortype            =	 8
+area_codes           =	 *
+chat_types           =	 *
+roam_types           =	 1,2,3,A,B,I,J,0
+call_types           =	 01
+user_types           =	 *
+
+[F101_ss_2]
+subplanid = 14000601
+note = 漫游任何地方的短信标批资费，未订购二批资费，拒绝使用
+billrebillflag       =	 0
+system_types         =	 ss,si
+Main_ProdId_Params   =	 830134
+favorcap             =	 0
+fee_types            =	 *
+user_brands          =	 *
+feetypes             =	 10000000
+favortype            =	 8
+area_codes           =	 *
+chat_types           =	 *
+roam_types           =	 *
+call_types           =	 01
+user_types           =	 *
+
+[t_pp_subprcplan_23]
+feeplanid            =	 F101
+attr                 =	 0000c
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 14000601
+note                 =	 漫游任何地方的短信标批资费，未订购二批资费，拒绝使用
+suboperation         =	 ss,si
+exp_date             =	 20500101000000
+type                 =	 0
+
+[t_pp_billprcplan_4]
+priority             =	 1
+billprcfavtype       =	 s
+billprcsubtype       =	 ss,si
+billprcid            =	 140006
+eff_date             =	 20180801000000
+billprctype          =	 8
+note                 =	 漫游任何地方的数据标批资费，未订购二批资费，拒绝使用
+prcexpr              =	 14000601
+exp_date             =	 20500101000000
+subpriority          =	 75
+billtype             =	 0
+audit_flag           =	 0
+billprcname          =	 140006
+attr                 =	 00000
+
+[F431_gs_1]
+subplanid = 83013411
+note = 漫游日本,韩国,数据无限使用/6日;
+AOC_flag             =	 1
+addtime              =	 *
+feetypes             =	 10000000
+gtfavortype          =	 8
+billrebillflag       =	 1
+system_types         =	 gg,gs
+ltfavortype          =	 8
+Main_ProdId_Params   =	 *
+thresholdval         =	 999999999
+gtfavorcap           =	 0
+user_brands          =	 oy
+adjust               =	 11
+thresholdtype        =	 3
+accumulateID         =	 83013411
+cross_flag           =	 0
+units                =	 1024
+warnflag             =	 0
+roam_types           =	 I,J,0
+ltfavorcap           =	 0
+
+[F431_gs_2]
+subplanid = 83013412
+note = 漫游中国内地,香港,$0/100MB/6日;
+AOC_flag             =	 1
+addtime              =	 *
+feetypes             =	 10000000
+gtfavortype          =	 5
+billrebillflag       =	 1
+system_types         =	 gg,gs
+ltfavortype          =	 8
+Main_ProdId_Params   =	 *
+thresholdval         =	 102400
+gtfavorcap           =	 0
+user_brands          =	 oy
+adjust               =	 11
+thresholdtype        =	 3
+accumulateID         =	 83013412
+cross_flag           =	 0
+units                =	 1024
+warnflag             =	 0
+roam_types           =	 1,2,3,A,B,0
+ltfavorcap           =	 0
+
+
+[t_pp_subprcplan_1]
+feeplanid            =	 F101
+attr                 =	 00000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013401
+note                 =	 于日本主叫日本,$1/min;
+suboperation         =	 vc
+exp_date             =	 20500101000000
+type                 =	 1
+
+[t_pp_subprcplan_2]
+feeplanid            =	 F101
+attr                 =	 00000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013402
+note                 =	 于日本,韩国,中国内地,香港主叫中国内地，香港，$2/min;
+suboperation         =	 vc
+exp_date             =	 20500101000000
+type                 =	 1
+
+[t_pp_subprcplan_3]
+feeplanid            =	 F101
+attr                 =	 00000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013403
+note                 =	 于韩国,主叫韩国,$1/min;
+suboperation         =	 vc
+exp_date             =	 20500101000000
+type                 =	 1
+
+[t_pp_subprcplan_4]
+feeplanid            =	 F101
+attr                 =	 00000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013404
+note                 =	 于日本,韩国,中国内地,香港被叫,$1/min;
+suboperation         =	 vc
+exp_date             =	 20500101000000
+type                 =	 1
+
+[t_pp_subprcplan_5]
+feeplanid            =	 F101
+attr                 =	 00000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013421
+note                 =	 于日本,韩国,中国内地,香港发送短信至任何地方,$1/min;
+suboperation         =	 ss
+exp_date             =	 20500101000000
+type                 =	 1
+
+[t_pp_subprcplan_6]
+feeplanid            =	 F431
+attr                 =	 0A000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013411
+note                 =	 漫游日本,韩国,数据无限使用/6日;
+suboperation         =	 gg,gs
+exp_date             =	 20500101000000
+type                 =	 1
+
+[t_pp_subprcplan_7]
+feeplanid            =	 F431
+attr                 =	 00000
+eff_date             =	 20180801000000
+audit_flag           =	 0
+subbillprcid         =	 83013412
+note                 =	 漫游中国内地,香港,$0/100MB/6日;
+suboperation         =	 gg,gs
+exp_date             =	 20500101000000
+type                 =	 1
+
+
+[t_pp_billprcplan_1]
+priority             =	 1
+billprcfavtype       =	 g,v,s
+billprcsubtype       =	 gg,gs,vc,ss
+billprcid            =	 830134
+eff_date             =	 20180801000000
+billprctype          =	 1
+note                 =	 XGLT-201807271330219774G日韓6日通話上網卡-4G日韓6天話音及數據卡$118
+prcexpr              =	 mut(83013401,mut(83013402,mut(83013403,mut(83013404,mut(83013421,mut(83013411,83013412))))))
+exp_date             =	 20500101000000
+subpriority          =	 50
+billtype             =	 1
+audit_flag           =	 0
+billprcname          =	 830134
+attr                 =	 0A000
+
+
+[t_pp_mainprodprc_brand_1]
+note                 =	 XGLT-201807271330219774G日韓6日通話上網卡-4G日韓6天話音及數據卡$118
+prod_prcid_param     =	 830134
+user_brand           =	 oy
+billprcid            =	 830134
+prod_prcid           =	 HKPMF4AJK003H06
+
+
+[result_code_replace_1]
+old_result_code      =	 4012
+note                 =	 830134,XGLT-201807271330219774G日韓6日通話上網卡-4G日韓6天話音及數據卡$118结果码4012替换为无语音提示的4010
+new_result_code      =	 4010
+prod_prcid           =	 HKPMF4AJK003H06
+
+[result_code_replace_2]
+old_result_code      =	 2203
+note                 =	 830134,XGLT-201807271330219774G日韓6日通話上網卡余额不足结果码2203替换为无语音提示的2001
+new_result_code      =	 2001
+prod_prcid           =	 HKPMF4AJK003H06
+
+[result_code_replace_3]
+old_result_code      =	 4202
+note                 =	 830134,XGLT-201807271330219774G日韓6日通話上網卡余额不足结果码4202替换为无语音提示的4204
+new_result_code      =	 4204
+prod_prcid           =	 HKPMF4AJK003H06
+
+
+[short_term_product_1]
+prod_prcid           =	 HKPMF4AJK003H06
+
+
+[sbillmodedetail_1]
+region_code          =	 0
+time_flag            =	 0
+mode_code            =	 830134
+eff_time             =	 20180801000000
+detail_type          =	 0
+detail_code          =	 830134
+begin_time           =	 20180801000000
+fav_order            =	 1
+exp_time             =	 20500101000000
+owner_type           =	 0
+mode_time            =	 0
+end_time             =	 20500101000000
+
+[sbillmodedetail_2]
+region_code          =	 0
+time_flag            =	 0
+mode_code            =	 830134
+eff_time             =	 20180801000000
+detail_type          =	 1
+detail_code          =	 468800741
+begin_time           =	 20180801000000
+fav_order            =	 1
+exp_time             =	 20500101000000
+owner_type           =	 0
+mode_time            =	 0
+end_time             =	 20500101000000
+
+
+[pd_transprodprc_1]
+note                 =	 XGLT-201807271330219774G日韓6日通話上網卡
+user_prc             =	 HKPMF4AJK003H06
+state                =	 0
+region_code          =	 0
+pricing_id           =	 468800741
+prod_prc             =	 830134
+
+
+[t_pp_fav_index_1]
+free_type            =	 001000
+unit_code            =	 4
+free_sum             =	 999999999
+period               =	 0
+bill_code            =	 0
+exp_date             =	 20500101000000
+busi_code            =	 3
+remind_code          =	 0
+cycle_day            =	 6
+fee_rate             =	 0
+fav_index            =	 83013411
+fav_type             =	 830134
+eff_date             =	 20180801000000
+other_fav_index      =
+fav_code             =	 D
+cycle_type           =	 1
+location             =	 v
+
+[t_pp_fav_index_2]
+free_type            =	 001000
+unit_code            =	 4
+free_sum             =	 102400
+period               =	 0
+bill_code            =	 0
+exp_date             =	 20500101000000
+busi_code            =	 3
+remind_code          =	 0
+cycle_day            =	 6
+fee_rate             =	 0
+fav_index            =	 83013412
+fav_type             =	 830134
+eff_date             =	 20180801000000
+other_fav_index      =
+fav_code             =	 D
+cycle_type           =	 1
+location             =	 e

@@ -1,0 +1,159 @@
+
+[F431_ss_1]
+subplanid = usa14s01
+note = 多地共用短信包，漫游美国，发短信，免费1000条
+adjust               =	 11
+addtime              =	 *
+cross_flag           =	 0
+area_codes           =	 *
+roam_types           =	 L
+call_types           =	 01
+fee_types            =	 *
+system_types         =	 ss
+billrebillflag       =	 1
+gtfavorcap           =	 0
+gtfavortype          =	 5
+ltfavorcap           =	 0
+ltfavortype          =	 8
+thresholdval         =	 1000
+thresholdtype        =	 4
+accumulateID         =	 usa14s01
+feetypes             =	 10000000
+CUG_US_SHARE         =	 1
+units                =   1
+
+[F431_ss_2]
+subplanid = usa14s02
+note = 多地共用，漫游中港，发漫游地本地短信，套餐内抵扣1000条
+adjust               =	 11
+addtime              =	 *
+cross_flag           =	 0
+area_codes           =	 *
+roam_types           =	 A,B
+call_types           =	 01
+fee_types            =	 *
+system_types         =	 ss
+billrebillflag       =	 1
+gtfavorcap           =	 0
+gtfavortype          =	 5
+ltfavorcap           =	 0
+ltfavortype          =	 8
+thresholdval         =	 1000
+thresholdtype        =	 4
+accumulateID         =	 usa14s02
+feetypes             =	 10000000
+CUG_US_SHARE         =	 1
+units                =   1
+
+[t_pp_subprcplan_1]
+subbillprcid         =	 usa14s01
+type                 =	 1
+suboperation         =	 ss
+feeplanid            =	 F431
+attr                 =	 00000
+eff_date             =	 20180901000000
+exp_date             =	 20500101000000
+audit_flag           =	 0
+note                 =	 多地共用短信包，漫游美国，发短信，免费1000条
+
+[t_pp_subprcplan_2]
+subbillprcid         =	 usa14s02
+type                 =	 1
+suboperation         =	 ss
+feeplanid            =	 F431
+attr                 =	 00000
+eff_date             =	 20180901000000
+exp_date             =	 20500101000000
+audit_flag           =	 0
+note                 =	 多地共用，漫游中港，发漫游地本地短信，套餐内抵扣1000条
+
+
+[t_pp_billprcplan_1]
+billprcid            =	 USA14S
+billprcname          =	 USA14S
+billprctype          =	 1
+billprcsubtype       =	 ss
+billprcfavtype       =	 s
+billtype             =	 1
+priority             =	 1
+subpriority          =	 30
+prcexpr              =	 mut(usa14s01,usa14s02)
+attr                 =	 00000
+eff_date             =	 20180901000000
+exp_date             =	 20500101000000
+audit_flag           =	 0
+note                 =	 Text (Allowed Text units) $0/1000
+
+[t_pp_fav_index_1]
+fav_type             =	 USA14S
+fav_index            =	 usa14s01
+unit_code            =	 1
+busi_code            =	 2
+bill_code            =	 0
+fav_code             =	 5
+fee_rate             =	 0
+remind_code          =	 0
+free_sum             =	 1000
+free_type            =	 001000
+period               =	 0
+other_fav_index      =
+eff_date             =	 20180901000000
+exp_date             =	 20500101000000
+location             =	 L
+cycle_type           =	 0
+cycle_day            =	 0
+
+[t_pp_fav_index_2]
+fav_type             =	 USA14S
+fav_index            =	 usa14s02
+unit_code            =	 1
+busi_code            =	 2
+bill_code            =	 0
+fav_code             =	 5
+fee_rate             =	 0
+remind_code          =	 0
+free_sum             =	 1000
+free_type            =	 001000
+period               =	 0
+other_fav_index      =
+eff_date             =	 20180901000000
+exp_date             =	 20500101000000
+location             =	 e
+cycle_type           =	 0
+cycle_day            =	 0
+
+[pd_transprodprc_1]
+region_code          =	 0
+user_prc             =	 USCAF0030
+pricing_id           =	 458850002
+prod_prc             =	 USA14S
+state                =	 0
+note                 =	 XGLT-20180704104433435-Text (Allowed Text units) $0/1000
+
+[sbillmodedetail_1]
+owner_type           =	 0
+region_code          =	 0
+detail_code          =	 USA14S
+detail_type          =	 0
+mode_code            =	 USA14S
+fav_order            =	 1
+mode_time            =	 0
+time_flag            =	 0
+begin_time           =	 20180901000000
+end_time             =	 20500101000000
+eff_time             =	 20180901000000
+exp_time             =	 20500101000000
+
+[sbillmodedetail_2]
+owner_type           =	 0
+region_code          =	 0
+detail_code          =	 458850002
+detail_type          =	 1
+mode_code            =	 USA14S
+fav_order            =	 1
+mode_time            =	 0
+time_flag            =	 0
+begin_time           =	 20180901000000
+end_time             =	 20500101000000
+eff_time             =	 20180901000000
+exp_time             =	 20500101000000

@@ -1,0 +1,250 @@
+[1] t_pp_subprcplan 费率计划FEEPLANID：
+		不按M计费                           按M计费
+gg      F101(不带阀值) F431(带阀值)      F460(不带阀值) F461(带阀值)
+vc ss   F101               F431
+
+--------------------------------------------------------------------------------
+'F101'
+
+'F101语音' 不按M计费，不带阀值
+
+序号	SUBBILLPRCID	PARAMID	PARAMVALUE	AUDIT_FLAG	NOTE	delete hkapp.t_pp_subprcparam where SUBBILLPRCID like '490002%';
+1	49000201	feetypes			10000000	0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','feetypes','10000000','0');
+2	49000201	Main_ProdId_Params	*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','Main_ProdId_Params','*','0');
+3	49000201	user_brands			gb			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','user_brands','gb','0');
+4	49000201	chat_types			*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','chat_types','*','0');
+5	49000201	fee_types			*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','fee_types','*','0');
+6	49000201	call_types			*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','call_types','*','0');
+7	49000201	roam_types			*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','roam_types','*','0');
+8	49000201	service_codes		*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','service_codes','*','0');
+9	49000201	system_types		vc			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','system_types','vc','0');
+10	49000201	dial_types			*			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','dial_types','*','0');
+11	49000201	favorcap			0			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','favorcap','0','0');
+12	49000201	units				60			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','units','60','0');
+13	49000201	favortype			8			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','favortype','8','0');
+14	49000201	billrebillflag		0			0	环球上网卡gb品牌语音标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000201','billrebillflag','0','0');
+
+
+'F101数据' --都是标批
+序号	SUBBILLPRCID	PARAMID	PARAMVALUE	AUDIT_FLAG	NOTE	delete t_pp_subprcparam where SUBBILLPRCID like '430020%';	
+1	43002001	system_types		gg,gs			0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','system_types','gg,gs','0');	
+2	43002001	roam_types			1,2,B,0			0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','roam_types','1,2,B,0','0');	
+3	43002001	units				1024			0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','units','1024','0');	
+4	43002001	feetypes			10000000		0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','feetypes','10000000','0');	
+5	43002001	favortype			8				0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','favortype','8','0');	
+6	43002001	favorcap			0				0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','favorcap','0','0');	
+7	43002001	user_brands			oy				0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','user_brands','oy','0');	
+8	43002001	billrebillflag		0				0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','billrebillflag','0','0');
+9	43002001	Main_ProdId_Params	830129,830130	0	漫游港粤流量标批单价$0/KB	insert into  t_pp_subprcparam values('43002001','Main_ProdId_Params','830129,830130','0');	
+
+'短信F101'
+
+序号	SUBBILLPRCID	PARAMID	PARAMVALUE	AUDIT_FLAG	NOTE	delete hkapp.t_pp_subprcparam where SUBBILLPRCID like '490003%';
+1	49000301	feetypes		10000000	0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','feetypes','10000000','0');
+2	49000301	favortype		8			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','favortype','8','0');
+3	49000301	favorcap		0			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','favorcap','0','0');
+4	49000301	billrebillflag	0			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','billrebillflag','0','0');
+5	49000301	system_types	ss,si		0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','system_types','ss,si','0');
+6	49000301	user_types		*			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','user_types','*','0');
+7	49000301	area_codes		*			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','area_codes','*','0');
+8	49000301	chat_types		*			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','chat_types','*','0');
+9	49000301	fee_types		*			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','fee_types','*','0');
+10	49000301	call_types		01			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','call_types','01','0');
+11	49000301	user_brands		gb			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','user_brands','gb','0');
+12	49000301	roam_types		*			0	环球上网卡gb品牌短信标批资费，未订购二批资费，拒绝使用	insert into  hkapp.t_pp_subprcparam values('49000301','roam_types','*','0');
+
+------------------------------------------------------
+
+'F431'
+
+'语音' 不按M计费，不带阀值
+SUBBILLPRCID	PARAMID	PARAMVALUE	AUDIT_FLAG	NOTE	delete t_pp_subprcparam where SUBBILLPRCID like 'VG6024%';
+1	83012713	system_types		vc			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','system_types','vc','0');
+2	83012713	roam_types			D			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','roam_types','D','0');
+3	83012713	call_types			01			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','call_types','01','0');
+4	83012713	fee_types			A,B,D,0		0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','fee_types','A,B,D,0','0');
+5	83012713	units				60			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','units','60','0');
+6	83012713	gtfavorcap			0			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','gtfavorcap','0','0');
+7	83012713	gtfavortype			8			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','gtfavortype','8','0');
+8	83012713	ltfavorcap			0			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','ltfavorcap','0','0');
+9	83012713	ltfavortype			8			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','ltfavortype','8','0');
+10	83012713	thresholdval		30			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','thresholdval','30','0');
+11	83012713	thresholdtype		2			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','thresholdtype','2','0');
+12	83012713	accumulateID		83012713	0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','accumulateID','83012713','0');
+13	83012713	adjust				11			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','adjust','11','0');
+14	83012713	dial_types			*			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','dial_types','*','0');
+15	83012713	service_codes		*			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','service_codes','*','0');
+16	83012713	chat_types			*			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','chat_types','*','0');
+17	83012713	AOC_flag			1			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','AOC_flag','1','0');
+18	83012713	gtblockflag			2			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','gtblockflag','2','0');
+19	83012713	cross_flag			0			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','cross_flag','0','0');
+20	83012713	feetypes			10000000	0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','feetypes','10000000','0');
+21	83012713	billrebillflag		1			0	无忧假期4G港澳4日卡，漫游澳门，主叫中港澳，抵扣澳门数据组合30分钟，超出后拒绝使用	insert into  hkapp.t_pp_subprcparam values('83012713','billrebillflag','1','0');
+22	32011901 	Main_ProdId_Params 	* 			0
+
+'F431数据' 不按M计费，带阀值
+序号	SUBBILLPRCID	PARAMID	PARAMVALUE	AUDIT_FLAG	NOTE	delete t_pp_subprcparam where SUBBILLPRCID like '830129%';	
+1	83012901	system_types		gg,gs		0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','system_types','gg,gs','0');	
+2	83012901	roam_types			1,2,B,0		0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','roam_types','1,2,B,0','0');	
+3	83012901	units				1024		0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','units','1024','0');	
+4	83012901	feetypes			10000000	0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','feetypes','10000000','0');	
+5	83012901	ltfavortype			8			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','ltfavortype','8','0');	
+6	83012901	ltfavorcap			0			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','ltfavorcap','0','0');	
+7	83012901	thresholdval		999999999	0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','thresholdval','999999999','0');	
+8	83012901	gtfavortype			8			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','gtfavortype','8','0');	
+9	83012901	gtfavorcap			0			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','gtfavorcap','0','0');	
+10	83012901	accumulateID		83012901	0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','accumulateID','83012901','0');	
+11	83012901	thresholdtype		3			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','thresholdtype','3','0');	
+12	83012901	cross_flag			0			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','cross_flag','0','0');	
+13	83012901	billrebillflag		1			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','billrebillflag','1','0');	
+14	83012901	adjust				11			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','adjust','11','0');	
+15	83012901	user_brands			*			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','user_brands','*','0');	
+16	83012901	Main_ProdId_Params	*			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','Main_ProdId_Params','*','0');	
+17	83012901	warnflag			0			0	4G 廣東及香港3日上網卡,无限任用	insert into  t_pp_subprcparam values('83012901','warnflag','0','0');	
+
+'F431短信'
+X3013 		adjust 				2 											0
+32011901 	Main_ProdId_Params 	* 												0
+32011901 	cross_flag 			0 											0
+SX30090 	area_codes 			* 											0
+SX30090 	roam_types 			B,1,2,3,D,Z,C,L,M,N,I,A,R,S,T 										0
+SX30090 	service_codes 		00 															0
+SX30090 	call_types 			01 													0
+SX30090 	fee_types 			* 											0
+SX30090 	chat_types 			!i3[abc],M0[56],SM0 								0
+SX30090 	user_brands 		*						
+SX30090 	system_types 		ss 						
+SX30090 	user_types 			* 						
+SX30090 	billrebillflag 		1 						
+SX30090 	gtfavorcap 			500 					
+SX30090 	gtfavortype 		2 						
+SX30090 	ltfavorcap 			0 						
+SX30090 	ltfavortype 		2 						
+SX30090 	thresholdval 		200 					
+SX30090 	thresholdtype 		4 						
+SX30090 	accumulateID 		SX30090AC 				
+SX30090 	feetypes 			10000000 				
+
+---------------------------------------------------------------------------------
+'F478'——多阈值，针对gprs，支持按MB计费,不支持按KB计费
+
+'数据'
+序号	SUBBILLPRCID	PARAMID	PARAMVALUE	AUDIT_FLAG	NOTE	delete hkapp.t_pp_subprcparam where SUBBILLPRCID like 'WG3028%';
+1	WG3028HM	area_codes		*			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','area_codes','*','0');
+2	WG3028HM	roam_types		1,2,3,A,B	0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','roam_types','1,2,3,A,B','0');
+3	WG3028HM	service_codes	*			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','service_codes','*','0');
+4	WG3028HM	user_types		*			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','user_types','*','0');
+5	WG3028HM	user_brands		*			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','user_brands','*','0');
+6	WG3028HM	system_types	gg,gs		0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','system_types','gg,gs','0');
+7	WG3028HM	count_value		3			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','count_value','3','0');
+8	WG3028HM	accumulateID	WG3028HM	0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','accumulateID','WG3028HM','0');
+9	WG3028HM	units			1048576		0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','units','1048576','0');
+10	WG3028HM	feetypes		10000000	0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','feetypes','10000000','0');
+11	WG3028HM	thresholdtype	3			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','thresholdtype','3','0');
+12	WG3028HM	1favorcap		0			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','1favorcap','0','0');
+13	WG3028HM	1favortype		8			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','1favortype','8','0');
+14	WG3028HM	1thresholdval	2097152		0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','1thresholdval','2097152','0');
+15	WG3028HM	2favortype		8			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','2favortype','8','0');
+16	WG3028HM	2favorcap		0			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','2favorcap','0','0');
+17	WG3028HM	2thresholdval	999999999	0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','2thresholdval','999999999','0');
+18	WG3028HM	3favortype		8			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','3favortype','8','0');
+19	WG3028HM	3favorcap		0			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','3favorcap','0','0');
+20	WG3028HM	adjust			1			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','adjust','1','0');
+21	WG3028HM	billrebillflag	1			0	中港共用数据包2T流量（企业主套餐，pcrf控制流量使用）	insert into  hkapp.t_pp_subprcparam values('WG3028HM','billrebillflag','1','0');
+
+
+----------------------------------------------------------------------------------
+'F460' 按M计费，不带阀值,只有数据
+
+'数据'
+45000204 user_brands 			wb 												0
+45000204 system_types 			gg,gs 											0
+45000204 Main_ProdId_Params 	450002,450003,450004,450005,450006 			0
+45000204 roam_types 			1,2,3,A 								0
+45000204 cross_flag 			0 													0
+45000204 feetypes 				10000000 								0
+45000204 units 					1048576 													0
+45000204 favortype 				8 														0
+45000204 favorcap 				3000 													0
+45000204 adjust 				1 												0
+45000204 accumulateID 			45000204 											0
+45000204 billrebillflag 		0 														0
+
+------------------------------------------------------------------------------------
+'F461' 按M计费，带阀值
+
+'数据'
+1	43002201	system_types		gg,gs		0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','system_types','gg,gs','0');
+2	43002201	user_brands			wy,oy		0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','user_brands','wy,oy','0');
+3	43002201	Main_ProdId_Params	730108		0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','Main_ProdId_Params','730108','0');
+4	43002201	roam_types			B			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','roam_types','B','0');
+5	43002201	cross_flag			0			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','cross_flag','0','0');
+6	43002201	feetypes			10000000	0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','feetypes','10000000','0');
+7	43002201	units				1048576		0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','units','1048576','0');
+8	43002201	thresholdval		35			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','thresholdval','35','0');
+9	43002201	thresholdtype		3			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','thresholdtype','3','0');
+10	43002201	accumulateID		43002201	0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','accumulateID','43002201','0');
+11	43002201	ltfavortype			8			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','ltfavortype','8','0');
+12	43002201	ltfavorcap			800			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','ltfavorcap','800','0');
+13	43002201	gtfavortype			8			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','gtfavortype','8','0');
+14	43002201	gtfavorcap			0			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','gtfavorcap','0','0');
+15	43002201	addtime				1			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','addtime','1','0');
+16	43002201	adjust				9			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','adjust','9','0');
+17	43002201	billrebillflag		0			0	跨境王一卡一号，香港漫游数据标批资费，$0.8/MB, 每日最高收费$28	insert into  hkapp.t_pp_subprcparam values('43002201','billrebillflag','0','0');
+18	43043001	warnflag			3			0	跨境王一卡一号30日通行证：$148/2GB中港共用（实际使用31日）	insert into  hkapp.t_pp_subprcparam values('43043001','warnflag','3','0');
+19  47011001 	AOC_flag 			1 			0
+20  47011001 	gtblockflag 		2 			0
+
+-----------------------------------------------------------------------------
+'F484' 多阈值，针对语音短信，数据按KB也支持
+
+国际漫游指定运营商$98日费Vietnam，包含60MB数据流量,超出0.003元/KB
+WG1025C7 area_codes 			* 				0
+WG1025C7 service_codes 			* 				0
+WG1025C7 roam_types 			Z 				0
+WG1025C7 user_types 			0,1 			0
+WG1025C7 user_brands 			* 0
+WG1025C7 system_types 			gg,gs 			0
+WG1025C7 addtime 				1 					0
+WG1025C7 3favortype 			8 						0
+WG1025C7 1favortype 			8 						0
+WG1025C7 1favorcap 				98000 									0
+WG1025C7 4favortype 			8 											0
+WG1025C7 2favortype 			8 										0
+WG1025C7 4favorcap 				3 								0
+WG1025C7 visit_area_codes 		84 									0
+WG1025C7 3thresholdval 			999999999 						0
+WG1025C7 3favorcap 				3 										0
+WG1025C7 1thresholdval 			1 							0
+WG1025C7 Inter_Operators 		VNMVT 									0
+WG1025C7 2thresholdval 			61440 										0
+WG1025C7 adjust 				9 										0
+WG1025C7 billrebillflag 		1 										0
+WG1025C7 thresholdtype 			3 										0
+WG1025C7 units 					1024 								0
+WG1025C7 accumulateID 			WG1025C7 					0
+WG1025C7 visitCarrierFlag 		1 									0
+WG1025C7 2favorcap 				0 							0
+WG1025C7 count_value 			4 									0
+WG1025C7 feetypes 				10000000 					0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

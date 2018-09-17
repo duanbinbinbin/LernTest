@@ -1,0 +1,673 @@
+[F431_gs_1]	# 不按M计费，带阀值
+subplanid = yuk02g11
+note = 漫游英国，40G;
+system_types		=	gg,gs
+roam_types			=   C
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   41943040
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   yuk02g11
+thresholdtype		=   3
+cross_flag			=   2
+billrebillflag		=   1
+adjust				=   9
+addtime				=   30
+warnflag			=   0
+
+[t_pp_subprcplan_3]
+subbillprcid        =	yuk02g11
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F461
+attr                =	00000
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国40GB，超出后禁止使用
+
+[t_pp_billprcplan_1]
+billprcid			=	YUK02G
+billprcname			=	YUK02G
+billprctype			=	1
+billprcsubtype      =	gg,gs
+billprcfavtype      =	g
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk02g11,mut(yuk02g02,mut(yuk02g03,mut(yuk02g04,yuk02g01))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐10英镑1G/3G变来变去30天套餐语音资费
+
+##############2
+
+[t_pp_subprcplan_1]
+subbillprcid        =	yuk04v06
+type                =	1
+suboperation        =	vc
+feeplanid           =	F431
+attr                =	0000d
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国，拨打英国手机（不含特殊号码）分钟数1500分钟/30天
+
+[t_pp_subprcplan_2]
+subbillprcid        =	yuk04v07
+type                =	1
+suboperation        =	vc
+feeplanid           =	F431
+attr                =	0000d
+eff_date            =	20190201000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	漫游英国，拨打英国手机（不含特殊号码）分钟数500分钟/30天
+
+[t_pp_billprcplan_2]
+billprcid			=	YUK04V
+billprcname			=	YUK04V
+billprctype			=	1
+billprcsubtype      =	vc
+billprcfavtype      =	v
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk04v01,mut(yuk04v02,mut(yuk04v03,mut(yuk04v04,mut(yuk04v05,mut(yuk04v06,yuk04v07)))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐12英镑30天套餐语音资费
+
+[F431_vc_1]
+subplanid = yuk04v06
+note =  漫游英国，1500min;
+system_types		=	vc
+roam_types			=   C
+call_types			=   01
+fee_types			=   C,0
+units				=   60
+gtfavorcap			=   50
+gtfavortype			=   8
+ltfavorcap			=   0
+ltfavortype			=   8
+thresholdval		=   1500
+thresholdtype		=   2
+accumulateID		=   yuk04v01
+adjust				=   9
+dial_types			=   *
+service_codes		=   *
+chat_types			=   000
+cross_flag			=   0
+feetypes			=   10000000
+billrebillflag		=   1
+
+[F431_vc_2]
+subplanid = yuk04v07
+note = 漫游英国，500min;
+system_types		=	vc
+roam_types			=   C
+call_types			=   01
+fee_types			=   C,0
+units				=   60
+gtfavorcap			=   50
+gtfavortype			=   8
+ltfavorcap			=   0
+ltfavortype			=   8
+thresholdval		=   500
+thresholdtype		=   2
+accumulateID		=   yuk04v01
+adjust				=   9
+dial_types			=   *
+service_codes		=   *
+chat_types			=   000
+cross_flag			=   0
+feetypes			=   10000000
+billrebillflag		=   1
+
+[F431_gs_2]
+subplanid = yuk04g11
+note = 漫游英国，40G;
+system_types		=	gg,gs
+roam_types			=   C
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   41943040
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   yuk04g11
+thresholdtype		=   3
+cross_flag			=   2
+billrebillflag		=   1
+adjust				=   9
+addtime				=   30
+warnflag			=   0
+
+[t_pp_subprcplan_4]
+subbillprcid        =	yuk04g11
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F461
+attr                =	00000
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国40GB，超出后禁止使用
+
+[t_pp_billprcplan_3]
+billprcid			=	YUK04G
+billprcname			=	YUK04G
+billprctype			=	1
+billprcsubtype      =	gg,gs
+billprcfavtype      =	g
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk04g11,mut(yuk04g02,mut(yuk04g03,mut(yuk04g04,yuk04g01))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐12英镑30天套餐音资费
+
+######################3
+
+[t_pp_subprcplan_5]
+subbillprcid        =	yuk05v06
+type                =	1
+suboperation        =	vc
+feeplanid           =	F431
+attr                =	0000d
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国，拨打英国手机（不含特殊号码）分钟数1500分钟/30天
+
+[t_pp_subprcplan_6]
+subbillprcid        =	yuk05v07
+type                =	1
+suboperation        =	vc
+feeplanid           =	F431
+attr                =	0000d
+eff_date            =	20190201000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	漫游英国，拨打英国手机（不含特殊号码）分钟数500分钟/30天
+
+[t_pp_billprcplan_4]
+billprcid			=	YUK05V
+billprcname			=	YUK05V
+billprctype			=	1
+billprcsubtype      =	vc
+billprcfavtype      =	v
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk05v01,mut(yuk05v02,mut(yuk05v03,mut(yuk05v04,mut(yuk05v05,mut(yuk05v06,yuk05v07)))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐16英镑30天套餐语音资费
+
+[F431_vc_3]
+subplanid = yuk05v06
+note = 漫游英国，1500min;
+system_types		=	vc
+roam_types			=   C
+call_types			=   01
+fee_types			=   C,0
+units				=   60
+gtfavorcap			=   50
+gtfavortype			=   8
+ltfavorcap			=   0
+ltfavortype			=   8
+thresholdval		=   1500
+thresholdtype		=   2
+accumulateID		=   yuk05v01
+adjust				=   9
+dial_types			=   *
+service_codes		=   *
+chat_types			=   000
+cross_flag			=   0
+feetypes			=   10000000
+billrebillflag		=   1
+
+[F431_vc_4]
+subplanid = yuk05v07
+note = 漫游英国，1000min;
+system_types		=	vc
+roam_types			=   C
+call_types			=   01
+fee_types			=   C,0
+units				=   60
+gtfavorcap			=   50
+gtfavortype			=   8
+ltfavorcap			=   0
+ltfavortype			=   8
+thresholdval		=   1000
+thresholdtype		=   2
+accumulateID		=   yuk05v01
+adjust				=   9
+dial_types			=   *
+service_codes		=   *
+chat_types			=   000
+cross_flag			=   0
+feetypes			=   10000000
+billrebillflag		=   1
+
+[F431_gs_3]
+subplanid = yuk05g11
+note = 漫游英国，100G;
+system_types		=	gg,gs
+roam_types			=   C
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   104857600
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   yuk05g11
+thresholdtype		=   3
+cross_flag			=   2
+billrebillflag		=   1
+adjust				=   9
+addtime				=   30
+warnflag			=   0
+
+[t_pp_subprcplan_6]
+subbillprcid        =	yuk05g11
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F461
+attr                =	00000
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国100GB，超出后禁止使用
+
+[t_pp_billprcplan_5]
+billprcid			=	YUK05G
+billprcname			=	YUK05G
+billprctype			=	1
+billprcsubtype      =	gg,gs
+billprcfavtype      =	g
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk05g11,mut(yuk05g02,mut(yuk05g03,mut(yuk05g04,yuk05g01))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐16英镑30天套餐数据资费
+
+###########################4
+
+
+[t_pp_subprcplan_7]
+subbillprcid        =	yuk06v06
+type                =	1
+suboperation        =	vc
+feeplanid           =	F431
+attr                =	0000d
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国，拨打英国手机（不含特殊号码）分钟数3000分钟/30天
+
+[t_pp_subprcplan_8]
+subbillprcid        =	yuk06v07
+type                =	1
+suboperation        =	vc
+feeplanid           =	F431
+attr                =	0000d
+eff_date            =	20190201000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	漫游英国，拨打英国手机（不含特殊号码）分钟数1200分钟/30天
+
+[t_pp_billprcplan_7]
+billprcid			=	YUK06V
+billprcname			=	YUK06V
+billprctype			=	1
+billprcsubtype      =	vc
+billprcfavtype      =	v
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk06v01,mut(yuk06v02,mut(yuk06v03,mut(yuk06v04,mut(yuk06v05,mut(yuk06v06,yuk06v07)))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐20英镑30天套餐语音资费
+
+[F431_vc_5]
+subplanid = yuk06v06
+note = 漫游英国,3000min;
+system_types		=	vc
+roam_types			=   C
+call_types			=   01
+fee_types			=   C,0
+units				=   60
+gtfavorcap			=   50
+gtfavortype			=   8
+ltfavorcap			=   0
+ltfavortype			=   8
+thresholdval		=   3000
+thresholdtype		=   2
+accumulateID		=   yuk06v01
+adjust				=   9
+dial_types			=   *
+service_codes		=   *
+chat_types			=   000
+cross_flag			=   0
+feetypes			=   10000000
+billrebillflag		=   1
+
+[F431_vc_6]
+subplanid = yuk06v07
+note = 漫游英国,1200min;
+system_types		=	vc
+roam_types			=   C
+call_types			=   01
+fee_types			=   C,0
+units				=   60
+gtfavorcap			=   50
+gtfavortype			=   8
+ltfavorcap			=   0
+ltfavortype			=   8
+thresholdval		=   1200
+thresholdtype		=   2
+accumulateID		=   yuk06v01
+adjust				=   9
+dial_types			=   *
+service_codes		=   *
+chat_types			=   000
+cross_flag			=   0
+feetypes			=   10000000
+billrebillflag		=   1
+
+[F431_gs_4]
+subplanid = yuk06g11
+note = 漫游英国,100G;
+system_types		=	gg,gs
+roam_types			=   C
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   104857600
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   yuk06g11
+thresholdtype		=   3
+cross_flag			=   2
+billrebillflag		=   1
+adjust				=   9
+addtime				=   30
+warnflag			=   0
+
+[t_pp_subprcplan_8]
+subbillprcid        =	yuk06g11
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F461
+attr                =	00000
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游英国100GB，超出后禁止使用
+
+[t_pp_billprcplan_8]
+billprcid			=	YUK06G
+billprcname			=	YUK06G
+billprctype			=	1
+billprcsubtype      =	gg,gs
+billprcfavtype      =	g
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yuk06g11,mut(yuk06g02,mut(yuk06g03,mut(yuk06g04,yuk06g01))))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费英国基础套餐20英镑30天套餐数据资费
+
+[F431_gs_5]
+subplanid = ych02g02
+note = 漫游中港,3G;
+system_types		=	gg,gs
+roam_types			=   A,B
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   3145728
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   ych02g01
+thresholdtype		=   3
+adjust				=   9
+addtime				=   30
+warnflag			=   2
+
+[F431_gs_6]
+subplanid = ych02g03
+note = 漫游中港,1G;
+system_types		=	gg,gs
+roam_types			=   A,B
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   1048576
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   ych02g01
+thresholdtype		=   3
+adjust				=   9
+addtime				=   30
+warnflag			=   2
+
+[t_pp_subprcplan_9]
+subbillprcid        =	ych02g02
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F431
+attr                =	00000
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游中港，数据流量3GB/30天
+
+[t_pp_subprcplan_10]
+subbillprcid        =	ych02g03
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F431
+attr                =	00000
+eff_date            =	20190201000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	漫游中港，数据流量1GB/30天
+
+[t_pp_billprcplan_9]
+billprcid			=	YCH02G
+billprcname			=	YCH02G
+billprctype			=	1
+billprcsubtype      =	gg,gs
+billprcfavtype      =	g
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(ych02g01,mut(ych02g02,ych02g03))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费中港￡10流量包1/3GB变来变去30天套餐
+
+##############################
+
+[F431_gs_7]
+subplanid = yas01g02
+note = 漫游亚太,3G;
+system_types		=	gg,gs
+roam_types			=   D,E,F,G,H,I,J,K
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   3145728
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   yas01g01
+thresholdtype		=   3
+adjust				=   9
+addtime				=   30
+warnflag			=   2
+
+[F431_gs_8]
+subplanid = yas01g03
+note = 漫游亚太,1G;
+system_types		=	gg,gs
+roam_types			=   D,E,F,G,H,I,J,K
+units				=   1024
+feetypes			=   10000000
+ltfavortype			=   8
+ltfavorcap			=   0
+thresholdval		=   1048576
+gtfavortype			=   5
+gtfavorcap			=   0
+accumulateID		=   yas01g01
+thresholdtype		=   3
+adjust				=   9
+addtime				=   30
+warnflag			=   2
+
+[t_pp_subprcplan_11]
+subbillprcid        =	yas01g02
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F431
+attr                =	00000
+eff_date            =	20180831000000
+exp_date            =	20190131235959
+audit_flag          =	0
+note                =	漫游亚太，数据流量3GB/30天
+
+[t_pp_subprcplan_12]
+subbillprcid        =	yas01g03
+type                =	1
+suboperation        =	gg,gs
+feeplanid           =	F431
+attr                =	00000
+eff_date            =	20190201000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	漫游亚太，数据流量1GB/30天
+
+[t_pp_billprcplan_10]
+billprcid			=	YAS01G
+billprcname			=	YAS01G
+billprctype			=	1
+billprcsubtype      =	gg,gs
+billprcfavtype      =	g
+billtype            =	1
+priority            =	1
+subpriority         =	20
+prcexpr             =	mut(yas01g01,mut(yas01g02,yas01g03))
+attr                =	00000
+eff_date            =	20170101000000
+exp_date            =	20500101000000
+audit_flag          =	0
+note                =	欧分二期预付费亚太￡10流量包1/3GB变来变去30天套餐
+
+
+[t_pp_fav_index_1]
+fav_type			=	YUK02G
+fav_index           =	yuk02g11
+unit_code           =	4
+busi_code           =	3
+bill_code           =	0
+fav_code            =	D
+fee_rate            =	0
+remind_code         =	0
+free_sum            =	41943040
+free_type           =	001000
+period              =	0
+other_fav_index     =
+eff_date            =	20110301000000
+exp_date            =	20190131235959
+location            =	0
+cycle_type          =	0
+cycle_day           =	0
+
+[t_pp_fav_index_2]
+fav_type			=	YUK04G
+fav_index           =	yuk04g11
+unit_code           =	4
+busi_code           =	3
+bill_code           =	0
+fav_code            =	D
+fee_rate            =	0
+remind_code         =	0
+free_sum            =	41943040
+free_type           =	001000
+period              =	0
+other_fav_index     =
+eff_date            =	20110301000000
+exp_date            =	20190131235959
+location            =	0
+cycle_type          =	0
+cycle_day           =	0
+
+[t_pp_fav_index_3]
+fav_type			=	YUK05G
+fav_index           =	yuk05g11
+unit_code           =	4
+busi_code           =	3
+bill_code           =	0
+fav_code            =	D
+fee_rate            =	0
+remind_code         =	0
+free_sum            =	104857600
+free_type           =	001000
+period              =	0
+other_fav_index     =
+eff_date            =	20110301000000
+exp_date            =	20190131235959
+location            =	0
+cycle_type          =	0
+cycle_day           =	0
+
+[t_pp_fav_index_4]
+fav_type			=	YUK06G
+fav_index           =	yuk06g11
+unit_code           =	4
+busi_code           =	3
+bill_code           =	0
+fav_code            =	D
+fee_rate            =	0
+remind_code         =	0
+free_sum            =	104857600
+free_type           =	001000
+period              =	0
+other_fav_index     =
+eff_date            =	20110301000000
+exp_date            =	20190131235959
+location            =	0
+cycle_type          =	0
+cycle_day           =	0
