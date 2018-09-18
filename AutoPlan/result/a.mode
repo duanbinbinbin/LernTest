@@ -1,340 +1,260 @@
 
 [F101_vc_1]
-subplanid = 83013411
-note = 于韩国香港中国内地拨打至韩国，$1/min;
-billrebillflag       =	 1 			
-system_types         =	 vc			
-dial_types           =	 *			
-main_prodid_params   =	 *			
-favorcap             =	 1000
-fee_types            =	 J	
-user_brands          =	 oy			
-feetypes             =	 10000000	
-favortype            =	 8			
-units                =	 60			
-chat_types           =	 *			
-roam_types           =	 0,1,2,3,A,B,J
-call_types           =	 01	
-service_codes        =	 * 			
+subplanid = 
+note = 
+feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
+Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
+user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
+chat_types           =	 *			[对应chat_type_info表 chat_type]
+fee_types            =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=1配置的记录]
+call_types           =	 *			[　01-主叫，02-被叫，03-呼转，]
+roam_types           =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=0配置的记录]
+service_codes        =	 * 			[正常00,4A，3H-大陆号码漫游香港跨境被叫，3M-香港号码漫游大陆跨境被叫]
+system_types         =	 vc			[vc 语音 vf 呼转 ss 短信 si  国际短信 gs GPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信]
+dial_types           =	 *			[对应dial_type_info. dial_type]
+favorcap             =	 0			[优惠量,费用]
+units                =	 60			[计费单位，1-按条数，6-6秒，60-分钟，1024-KB，10486576-MB]
+favortype            =	 8			[优惠类型，8-直接置费率，5-不做优惠，10-按比例优惠,以"分子/分母"形式配置，例如：打八折，设置favorcap=4/5;]
+billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 
 [F101_vc_2]
-subplanid = 83013412
-note = 于韩国香港中国内地拨打至中港，$2/min;
-billrebillflag       =	 1
-system_types         =	 vc	
-dial_types           =	 *
-main_prodid_params   =	 *			
-favorcap             =	 2000
-fee_types            =	 A,B
-user_brands          =	 oy			
-feetypes             =	 10000000	
-favortype            =	 8		
-units                =	 60			
-chat_types           =	 *			
-roam_types           =	 0,1,2,3,A,B,J
-call_types           =	 01
-service_codes        =	 *
+subplanid = 
+note = 
+feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
+Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
+user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
+chat_types           =	 *			[对应chat_type_info表 chat_type]
+fee_types            =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=1配置的记录]
+call_types           =	 *			[　01-主叫，02-被叫，03-呼转，]
+roam_types           =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=0配置的记录]
+service_codes        =	 * 			[正常00,4A，3H-大陆号码漫游香港跨境被叫，3M-香港号码漫游大陆跨境被叫]
+system_types         =	 vc			[vc 语音 vf 呼转 ss 短信 si  国际短信 gs GPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信]
+dial_types           =	 *			[对应dial_type_info. dial_type]
+favorcap             =	 0			[优惠量,费用]
+units                =	 60			[计费单位，1-按条数，6-6秒，60-分钟，1024-KB，10486576-MB]
+favortype            =	 8			[优惠类型，8-直接置费率，5-不做优惠，10-按比例优惠,以"分子/分母"形式配置，例如：打八折，设置favorcap=4/5;]
+billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 
 [F101_vc_3]
-subplanid = 83013413
-note = 于韩国和香港中国内地拨打其他地区禁止使用;
-billrebillflag       =	 1
-system_types         =	 vc	
-dial_types           =	 *			
-main_prodid_params   =	 *	
-favorcap             =	 0	
-fee_types            =	 *			
-user_brands          =	 oy			
-feetypes             =	 10000000	
-favortype            =	 8			
-units                =	 60			
-chat_types           =	 *			
-roam_types           =	 0,1,2,3,A,B,J
-call_types           =	 01
-service_codes        =	 *
-
-[F101_vc_4]
-subplanid = 83013414
-note = 于韩国香港中国内地接听，$1/min;
-billrebillflag       =	 1
-system_types         =	 vc		
-dial_types           =	 *			
-main_prodid_params   =	 *			
-favorcap             =	 1000
-fee_types            =	 *		
-user_brands          =	 oy			
-feetypes             =	 10000000	
-favortype            =	 8			
-units                =	 60			
-chat_types           =	 *	
-roam_types           =	 0,1,2,3,A,B,J
-call_types           =	 02
-service_codes        =	 * 			
+subplanid = 
+note = 
+feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
+Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
+user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
+chat_types           =	 *			[对应chat_type_info表 chat_type]
+fee_types            =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=1配置的记录]
+call_types           =	 *			[　01-主叫，02-被叫，03-呼转，]
+roam_types           =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=0配置的记录]
+service_codes        =	 * 			[正常00,4A，3H-大陆号码漫游香港跨境被叫，3M-香港号码漫游大陆跨境被叫]
+system_types         =	 vc			[vc 语音 vf 呼转 ss 短信 si  国际短信 gs GPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信]
+dial_types           =	 *			[对应dial_type_info. dial_type]
+favorcap             =	 0			[优惠量,费用]
+units                =	 60			[计费单位，1-按条数，6-6秒，60-分钟，1024-KB，10486576-MB]
+favortype            =	 8			[优惠类型，8-直接置费率，5-不做优惠，10-按比例优惠,以"分子/分母"形式配置，例如：打八折，设置favorcap=4/5;]
+billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 
 
-[F101_gs_1]
-subplanid = 83013401
-note = 韓國數據組合：$25/無限/6日
-system_types		=	gg,gs	
-roam_types			=   J
-units				=   1024		
-feetypes			=   10000000	
-ltfavortype			=   8			
-ltfavorcap			=   0			
-thresholdval		=   999999999	
-gtfavortype			=   8			
-gtfavorcap			=   0			
-accumulateID		=   83013401	
-thresholdtype		=   3			
-cross_flag			=   0			
-billrebillflag		=   1			
-adjust				=   11	
-addtime				=   *
-user_brands			=   oy
-Main_ProdId_Params	=   *	
-warnflag			=   0
+[F431_gs_1]
+subplanid = 
+note = 
+system_types         =	 vc			[vc 语音 vf 呼转 ss 短信 si  国际短信 gs GPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信]
+roam_types           =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=0配置的记录]
+units                =	 60			[计费单位，1-按条数，6-6秒，60-分钟，1024-KB，10486576-MB]
+feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
+ltfavortype          =	 8			[阈值核减费率计划，小于第一个阈值的优惠类型]
+ltfavorcap           =	 0			[阈值核减费率计划，小于第一个阈值的优惠量]
+thresholdval         =	 30			[单阈值，阈值数值]
+gtfavortype          =	 8			[阈值核减费率计划，大于第一个阈值的优惠类型]
+gtfavorcap           =	 0			[阈值核减费率计划，大于第一个阈值的优惠量]
+accumulateID         =	 83012713	[累计ID]
+thresholdtype        =	 2			[阈值类型，2-语音，3-流量，4-短信]
+cross_flag           =	 0			[默认1  0 ：跨阀值不累积  1 ：跨阀值部分也累积，目前对于没有订购免费资源包就要拒绝使用的参数都配置cross_flag=0;特殊业务，cross_flag = 2,是超出后返回,按WG0703HM资费批价，如WG0801]
+billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
+adjust               =	 11			[在使用使用完之后能续订的要使用'9'连天的，其他'11'就行;1整月 2半月折算 3 首次使用半月  4 单天，5 首次使用单天 6连月  7 包年,8,按天折算，9.连天（按天累计）；11累积量生效失效时间与资费订购生效失效时间一致]
+addtime              =	 *			[adjust=9 以外的都是*]
+user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
+Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
+warnflag             =	 0			[warnflag 默认为0，配置为2，流量用完，RF写特殊工单，工单程序进行自动续订，如果余额充足，自动续订成功，余额不充足，续订失败需要修改订购表，并同步给BSS；CRM必须要选自动续扣，订购属性表'EUB00004=0，AC才能实现自动续扣]
+AOC_flag             =	 1			[AOC_flag=1，跨阈值话单，RF返回AOC_flag字段，通知CF，这是最后一个分片，CF返回网元，流量用完后再来下一个请求。]
 
+[F431_gs_2]
+subplanid = 
+note = 
+system_types         =	 vc			[vc 语音 vf 呼转 ss 短信 si  国际短信 gs GPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信]
+roam_types           =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=0配置的记录]
+units                =	 60			[计费单位，1-按条数，6-6秒，60-分钟，1024-KB，10486576-MB]
+feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
+ltfavortype          =	 8			[阈值核减费率计划，小于第一个阈值的优惠类型]
+ltfavorcap           =	 0			[阈值核减费率计划，小于第一个阈值的优惠量]
+thresholdval         =	 30			[单阈值，阈值数值]
+gtfavortype          =	 8			[阈值核减费率计划，大于第一个阈值的优惠类型]
+gtfavorcap           =	 0			[阈值核减费率计划，大于第一个阈值的优惠量]
+accumulateID         =	 83012713	[累计ID]
+thresholdtype        =	 2			[阈值类型，2-语音，3-流量，4-短信]
+cross_flag           =	 0			[默认1  0 ：跨阀值不累积  1 ：跨阀值部分也累积，目前对于没有订购免费资源包就要拒绝使用的参数都配置cross_flag=0;特殊业务，cross_flag = 2,是超出后返回,按WG0703HM资费批价，如WG0801]
+billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
+adjust               =	 11			[在使用使用完之后能续订的要使用'9'连天的，其他'11'就行;1整月 2半月折算 3 首次使用半月  4 单天，5 首次使用单天 6连月  7 包年,8,按天折算，9.连天（按天累计）；11累积量生效失效时间与资费订购生效失效时间一致]
+addtime              =	 *			[adjust=9 以外的都是*]
+user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
+Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
+warnflag             =	 0			[warnflag 默认为0，配置为2，流量用完，RF写特殊工单，工单程序进行自动续订，如果余额充足，自动续订成功，余额不充足，续订失败需要修改订购表，并同步给BSS；CRM必须要选自动续扣，订购属性表'EUB00004=0，AC才能实现自动续扣]
+AOC_flag             =	 1			[AOC_flag=1，跨阈值话单，RF返回AOC_flag字段，通知CF，这是最后一个分片，CF返回网元，流量用完后再来下一个请求。]
 
-[F101_gs_2]
-subplanid = 83013402
-note = 中港數據組合：$0/100MB/6日
-system_types		=	gg,gs		
-roam_types			=   1,2,3,B,0
-units				=   1024		
-feetypes			=   10000000	
-ltfavortype			=   8			
-ltfavorcap			=   0			
-thresholdval		=   102400
-gtfavortype			=   8			
-gtfavorcap			=   0			
-accumulateID		=   83013402	
-thresholdtype		=   3
-cross_flag			=   0		
-billrebillflag		=   1			
-adjust				=   11			
-addtime				=   *			
-user_brands			=   oy
-Main_ProdId_Params	=   *	
-warnflag			=   0	
-AOC_flag 			=   1
-
-[F101_ss_1]
-subplanid = 83013421
-note = 于中国内地，香港和韩国发送任何地区，$1/条	
-billrebillflag       =	 1
-system_types         =	 ss	
-main_prodid_params   =	 *		
-favorcap             =	 1000
-fee_types            =	 *			
-user_brands          =	 oy
-feetypes             =	 10000000
-favortype            =	 8			
-area_codes           =	 *			
-chat_types           =	 *	
-roam_types           =	 0,1,2,3,A,B,J
-call_types           =	 01	
-user_types           =	 *	
 
 [t_pp_subprcplan_1]
-feeplanid            =	 F431				
-attr                 =	 00000				
-eff_date             =	 20180701000000		
-audit_flag           =	 0	
-subbillprcid         =	 83013411
-note                 =	 于韩国香港中国内地拨打至韩国，$1/min;
-suboperation         =	 vc
-exp_date             =	 20500101000000		
-type                 =	 1					
+subbillprcid         =	 WG401901			[子资费标识]
+type                 =	 1					[子资费类型0 标批资费 1二批资费]
+suboperation         =	 gg,gs				[资费子类型（可以是组合以“，”分隔）标批子资费类型vc语音 vf呼转 ss短信 si  国际短信 gsGPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信 支持*的配置]
+feeplanid            =	 F431				[费率方案标识]
+attr                 =	 00000				[记账资费属性;0A000的使用（例如无限使用的场景，要累计上使用量）;拒绝使用为0000c;0000a离线打错单在线返回4010,0000b离线免费在线返回4010]
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+audit_flag           =	 0					[审计字段：0，已经审计1，未审计增加局数据时，默认配置此字段为1]
+note                 =	 电渠准后付中港套餐1GB($118)
 
 [t_pp_subprcplan_2]
-feeplanid            =	 F101
-attr                 =	 00000				
-eff_date             =	 20180701000000		
-audit_flag           =	 0					
-subbillprcid         =	 83013412		
-note                 =	 于韩国香港中国内地拨打至中港，$2/min;
-suboperation         =	 vc
-exp_date             =	 20500101000000		
-type                 =	 1					
+subbillprcid         =	 WG401901			[子资费标识]
+type                 =	 1					[子资费类型0 标批资费 1二批资费]
+suboperation         =	 gg,gs				[资费子类型（可以是组合以“，”分隔）标批子资费类型vc语音 vf呼转 ss短信 si  国际短信 gsGPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信 支持*的配置]
+feeplanid            =	 F431				[费率方案标识]
+attr                 =	 00000				[记账资费属性;0A000的使用（例如无限使用的场景，要累计上使用量）;拒绝使用为0000c;0000a离线打错单在线返回4010,0000b离线免费在线返回4010]
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+audit_flag           =	 0					[审计字段：0，已经审计1，未审计增加局数据时，默认配置此字段为1]
+note                 =	 电渠准后付中港套餐1GB($118)
 
 [t_pp_subprcplan_3]
-feeplanid            =	 F101
-attr                 =	 0000c		
-eff_date             =	 20180701000000		
-audit_flag           =	 0				
-subbillprcid         =	 83013413
-note                 =	 于韩国和香港中国内地拨打其他地区禁止使用;
-suboperation         =	 vc			
-exp_date             =	 20500101000000		
-type                 =	 1	
+subbillprcid         =	 WG401901			[子资费标识]
+type                 =	 1					[子资费类型0 标批资费 1二批资费]
+suboperation         =	 gg,gs				[资费子类型（可以是组合以“，”分隔）标批子资费类型vc语音 vf呼转 ss短信 si  国际短信 gsGPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信 支持*的配置]
+feeplanid            =	 F431				[费率方案标识]
+attr                 =	 00000				[记账资费属性;0A000的使用（例如无限使用的场景，要累计上使用量）;拒绝使用为0000c;0000a离线打错单在线返回4010,0000b离线免费在线返回4010]
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+audit_flag           =	 0					[审计字段：0，已经审计1，未审计增加局数据时，默认配置此字段为1]
+note                 =	 电渠准后付中港套餐1GB($118)
 
 [t_pp_subprcplan_4]
-feeplanid            =	 F101
-attr                 =	 00000
-eff_date             =	 20180701000000	
-audit_flag           =	 0
-subbillprcid         =	 83013414
-note                 =	 于韩国香港中国内地接听，$1/min;
-suboperation         =	 vc
-exp_date             =	 20500101000000	
-type                 =	 1	
+subbillprcid         =	 WG401901			[子资费标识]
+type                 =	 1					[子资费类型0 标批资费 1二批资费]
+suboperation         =	 gg,gs				[资费子类型（可以是组合以“，”分隔）标批子资费类型vc语音 vf呼转 ss短信 si  国际短信 gsGPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信 支持*的配置]
+feeplanid            =	 F431				[费率方案标识]
+attr                 =	 00000				[记账资费属性;0A000的使用（例如无限使用的场景，要累计上使用量）;拒绝使用为0000c;0000a离线打错单在线返回4010,0000b离线免费在线返回4010]
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+audit_flag           =	 0					[审计字段：0，已经审计1，未审计增加局数据时，默认配置此字段为1]
+note                 =	 电渠准后付中港套餐1GB($118)
 
 [t_pp_subprcplan_5]
-feeplanid            =	 F431				
-attr                 =	 0A000				
-eff_date             =	 20180701000000		
-audit_flag           =	 0					
-subbillprcid         =	 83013401			
-note                 =	 韓國數據組合：$25/無限/6日
-suboperation         =	 gg,gs				
-exp_date             =	 20500101000000		
-type                 =	 1					
-
-[t_pp_subprcplan_6]
-feeplanid            =	 F431				
-attr                 =	 00000				
-eff_date             =	 20180701000000		
-audit_flag           =	 0					
-subbillprcid         =	 83013402			
-note                 =	 中港數據組合：$0/100MB/6日
-suboperation         =	 gg,gs				
-exp_date             =	 20500101000000		
-type                 =	 1					
-
-[t_pp_subprcplan_7]
-feeplanid            =	 F101
-attr                 =	 00000	
-eff_date             =	 20180701000000
-audit_flag           =	 0					
-subbillprcid         =	 83013421
-note                 =	 于中国内地，香港和韩国发送任何地区，$1/条	
-suboperation         =	 ss
-exp_date             =	 20500101000000		
-type                 =	 1				
+subbillprcid         =	 WG401901			[子资费标识]
+type                 =	 1					[子资费类型0 标批资费 1二批资费]
+suboperation         =	 gg,gs				[资费子类型（可以是组合以“，”分隔）标批子资费类型vc语音 vf呼转 ss短信 si  国际短信 gsGPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信 支持*的配置]
+feeplanid            =	 F431				[费率方案标识]
+attr                 =	 00000				[记账资费属性;0A000的使用（例如无限使用的场景，要累计上使用量）;拒绝使用为0000c;0000a离线打错单在线返回4010,0000b离线免费在线返回4010]
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+audit_flag           =	 0					[审计字段：0，已经审计1，未审计增加局数据时，默认配置此字段为1]
+note                 =	 电渠准后付中港套餐1GB($118)
 
 
 [t_pp_billprcplan_1]
-priority             =	 1				
-billprcfavtype       =	 g,s,v
-billprcsubtype       =	 gg,gs,vc,ss
-billprcid            =	 830134
-eff_date             =	 20180701000000		
-billprctype          =	 1					
-note                 =	 XGLT-201807061449122674G韓國6日通話上網卡,韩国无限,中港100MB
-prcexpr              =	 mut(83013401,mut(83013402,mut(83013411,mut(83013412,mut(83013413,mut(83013414,83013421))))))
-exp_date             =	 20500101000000		
-subpriority          =	 50					
-billtype             =	 1					
-audit_flag           =	 0					
-billprcname          =	 830134
-attr                 =	 0A000				
-
-
-[pd_transprodprc_1]
-note                 =	 XGLT-201807061449122674G韓國6日通話上網卡,韩国无限,中港100MB
-user_prc             =	 HKPMF4AKR003H06 		
-state                =	 0						
-region_code          =	 0					
-pricing_id           =	 468800741	
-prod_prc             =	 830134
-
-
-[result_code_replace_1]
-old_result_code      =	 4012		
-note                 =	 830134,韓國6日通話上網卡余额不足结果码4012替换为无语音提示的4010
-new_result_code      =	 4010		
-prod_prcid           =	 HKPMF4AKR003H06 	
-
-[result_code_replace_2]
-old_result_code      =	 4202				
-note                 =	 830134,韓國6日通話上網卡4202替换为4204
-new_result_code      =	 4204				
-prod_prcid           =	 HKPMF4AKR003H06 		
-
-[result_code_replace_3]
-old_result_code      =	 2203				
-note                 =	 830134,韓國6日通話上網卡2203替换为2001
-new_result_code      =	 2001				
-prod_prcid           =	 HKPMF4AKR003H06 		
-
-
-[sbillmodedetail_1]
-region_code          =	 0						
-time_flag            =	 0           
-mode_code            =	 830134					
-eff_time             =	 20180701000000
-detail_type          =	 0						
-detail_code          =	 830134      
-begin_time           =	 20180701000000
-fav_order            =	 1           
-exp_time             =	 20500101000000
-owner_type           =	 0           
-mode_time            =	 0           
-end_time             =	 20500101000000
-
-[sbillmodedetail_2]
-region_code          =	 0						
-time_flag            =	 0           
-mode_code            =	 830134					
-eff_time             =	 20180701000000
-detail_type          =	 1						
-detail_code          =	 468800741      
-begin_time           =	 20180701000000
-fav_order            =	 1           
-exp_time             =	 20500101000000
-owner_type           =	 0           
-mode_time            =	 0           
-end_time             =	 20500101000000
-
-
-[short_term_product_1]
-prod_prcid           =	 HKPMF4AKR003H06		
-
-
-[t_pp_mainprodprc_brand_1]
-note                 =	 XGLT-201807061449122674G韓國6日通話上網卡,韩国无限,中港100MB
-prod_prcid_param     =	 830134				
-user_brand           =	 oy		
-billprcid            =	 830134				
-prod_prcid           =	 HKPMF4AKR003H06		
+billprcid            =	 830129			[记账资费ID，长度一般定为6位，后付费一个资费对应多个记账资费ID时，此处配置与PROD_PRCID_PARAM一致]
+billprcname          =	 WG4019				[记账资费名称，配置跟billprcid一致]
+billprctype          =	 1					[资费类型1 二批普通资费 2 二批全局前向优惠 3 二批全局后向优惠 4语音标批基本费 5语音标批长途费 6语音标批信息费 7语音标批呼转费(联通国际未使用) 8其他业务标批基本费 9其他业务标批信息费（联通国际未使用）]
+billprcsubtype       =	 gg,gs				[如果子资费有语音，数据，短信，就是gg,gs,vc,ss;资费子类型（可以是组合以“，”分隔）标批子资费类型 vc 语音 vf 呼转 ss 短信 si  国际短信 gs GPRS-在线 gg  GPRS-离线 ml 增值短信 mp 增值（视频电话）fm  商旅卡飞信 支持*的配置]
+billprcfavtype       =	 g					[如果子资费有语音，数据，短信，就是g,v,s;优惠大类(可以是组合以"，"分隔，还可以支持 * )v 语音 g GPRS s 短信  m 增值业务]
+billtype             =	 1					[0:标批记帐资费，1：个批记帐资费]
+priority             =	 1					[资费主优先级，数字越大优先级越高]
+subpriority          =	 20					[资费次优先级，数字越大优先级越高]
+prcexpr              =	 WG401901			[子资费的关系表达式，目前只使用了mut和add关系mut——只选其中一个，找到符合条件的第一个就不执行后面的 add——两个都执行，如果费用类型一样，后者会覆盖前者（例如：都是基本费用）；费用类型不一致则叠加（例如：一个是基本费用，一个是长途费用）]
+attr                 =	 00000				[记账资费属性;0A000的使用（例如无限使用的场景，要累计上使用量）;拒绝使用为0000c;0000a离线打错单在线返回4010,0000b离线免费在线返回4010]
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+audit_flag           =	 0					[审计字段：0，已经审计1，未审计增加局数据时，默认配置此字段为1]
+note                 =	 电渠准后付中港套餐1GB($118)
 
 
 [t_pp_fav_index_1]
-free_type            =	 001000				
-unit_code            =	 4
-free_sum             =	 102400				
-period               =	 0		
-bill_code            =	 0				
-exp_date             =	 20500101000000	
-busi_code            =	 3	
-remind_code          =	 0					
-cycle_day            =	 6
-fee_rate             =	 0	
-fav_index            =	 83013402
-fav_type             =	 830134				
-eff_date             =	 20180701000000	
-other_fav_index      =	 
-fav_code             =	 D
-cycle_type           =	 1
-location             =	 e	
+fav_type             =	 VG6019				[计费套餐编码-t_pp_billprcplan.billprcid]
+fav_index            =	 VG6019HM			[累计ID-t_pp_subprcparam表的accumulateID]
+unit_code            =	 3					[免费资源累计单位定义如下：1： 单位1-条	2： 单位6-6秒	3： 单位60-分钟	4： 单位1024-KB	6:  单位1048576-MB]
+busi_code            =	 1					[业务标识：0：所有业务 1：语音业务 2：短信业务 3：GPRS业务 5：WLAN业务 6：彩信业务 7：GPRS业务不封顶 8：GPRS业务结转流量查, 欧分美分用 a语音,b数据,c短信,d数据业务共享结转;]
+bill_code            =	 0					[统一配置0]
+fav_code             =	 1					[优惠类型，定义如下：1：基本通话优惠分钟数 2：本地通话优惠分钟数 3：漫游通话优惠分钟数 4：长途通话优惠分钟数 5：短信优惠条数 7：WLAN优惠分钟数 8：彩信优惠条数 A：GPRS省内优惠 B：GPRS省际漫游优惠 C：GPRS国内优惠 D：GPRS国际优惠, ]
+fee_rate             =	 0					[欧分、美分、港分默认填0; GPRS业务套餐外费率，定义如下：第一位：表示计费单位类型 第二位到第五位：表示具体费率值（单位厘） 计费单位类型定义如下：0   零费率 1   按兆计费 2   按K计费 3   按时长计费 例如：10290 表示按兆计费，套外费率是0.29元/M]
+remind_code          =	 0					[默认填0]
+free_sum             =	 100					[免费资源总量]
+free_type            =	 001000				[默认填001000]
+period               =	 0					[周期，默认填0]
+other_fav_index      =	 [默认为空]  
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+location             =	 e					[欧分该字段都是0, B漫游香港,C漫游英国,D澳门,E台湾,F新加坡,K漫游美国,e中港,g中港澳台,1大陆归属地（港分）,3省际漫游（港分）,i one套餐漫游地, j 新马泰 ]
+cycle_type           =	 0					[欧美分该字段都是0, 0自然月；1指定天数]
+cycle_day            =	 0					[周期天数,欧分该字段都是0, 如果自然月的话就是0]
 
-[t_pp_fav_index/aprod]	#t_pp_fav_index
-fav_type			=	830134				
-fav_index           =	83013401			
-unit_code           =	4	
-busi_code           =	3			
-bill_code           =	0					
-fav_code            =	D	
-fee_rate            =	0		
-remind_code         =	0				
-free_sum            =	999999999
-free_type           =	001000				
-period              =	0					
-other_fav_index     =						
-eff_date            =	20180701000000		
-exp_date            =	20500101000000		
-location            =	J
-cycle_type          =	1
-cycle_day           =	6
+[t_pp_fav_index_2]
+fav_type             =	 VG6019				[计费套餐编码-t_pp_billprcplan.billprcid]
+fav_index            =	 VG6019HM			[累计ID-t_pp_subprcparam表的accumulateID]
+unit_code            =	 3					[免费资源累计单位定义如下：1： 单位1-条	2： 单位6-6秒	3： 单位60-分钟	4： 单位1024-KB	6:  单位1048576-MB]
+busi_code            =	 1					[业务标识：0：所有业务 1：语音业务 2：短信业务 3：GPRS业务 5：WLAN业务 6：彩信业务 7：GPRS业务不封顶 8：GPRS业务结转流量查, 欧分美分用 a语音,b数据,c短信,d数据业务共享结转;]
+bill_code            =	 0					[统一配置0]
+fav_code             =	 1					[优惠类型，定义如下：1：基本通话优惠分钟数 2：本地通话优惠分钟数 3：漫游通话优惠分钟数 4：长途通话优惠分钟数 5：短信优惠条数 7：WLAN优惠分钟数 8：彩信优惠条数 A：GPRS省内优惠 B：GPRS省际漫游优惠 C：GPRS国内优惠 D：GPRS国际优惠, ]
+fee_rate             =	 0					[欧分、美分、港分默认填0; GPRS业务套餐外费率，定义如下：第一位：表示计费单位类型 第二位到第五位：表示具体费率值（单位厘） 计费单位类型定义如下：0   零费率 1   按兆计费 2   按K计费 3   按时长计费 例如：10290 表示按兆计费，套外费率是0.29元/M]
+remind_code          =	 0					[默认填0]
+free_sum             =	 100					[免费资源总量]
+free_type            =	 001000				[默认填001000]
+period               =	 0					[周期，默认填0]
+other_fav_index      =	 [默认为空]  
+eff_date             =	 20180501000000		[生效时间]
+exp_date             =	 20500101000000		[失效时间]
+location             =	 e					[欧分该字段都是0, B漫游香港,C漫游英国,D澳门,E台湾,F新加坡,K漫游美国,e中港,g中港澳台,1大陆归属地（港分）,3省际漫游（港分）,i one套餐漫游地, j 新马泰 ]
+cycle_type           =	 0					[欧美分该字段都是0, 0自然月；1指定天数]
+cycle_day            =	 0					[周期天数,欧分该字段都是0, 如果自然月的话就是0]
 
+
+[t_pp_mainprodprc_brand_1]
+user_brand           =	 oy				[用户品牌,对应t_pp_subprcparam表的参数user_brands配置的参数值，为标批时使用oy-预付费一卡一号 wy-预付费一卡两号 wj-预付费极速卡 oh-后付费一卡一号 wh-后付费一卡两号]
+prod_prcid           =	 HKPMF4DGDHK1U03	[产品资费ID，对应ur_userprc_info的prod_prcid字段]
+prod_prcid_param     =	 830129			[产品资费ID对应的要在 t_pp_subprcparam 表的参数Main_ProdId_Params配置的参数值，为标批时使用]
+billprcid            =	 830129			[记账资费ID，长度一般定为6位，后付费一个资费对应多个记账资费ID时，此处配置与PROD_PRCID_PARAM一致]
+note                 =	 电渠准后付中港套餐1GB($118)
+
+
+[pd_transprodprc_1]
+region_code          =	 0						[默认填0]
+user_prc             =	 HKPMF4DGDHK1U03			[产品资费ID，对应ur_userprc_info表prod_prcid]
+pricing_id           =	 468800551				[ur_userprc_info表pricing_id需与PD_TRANSPRODPRC的pricing_id一致，一般为月租代码]
+prod_prc             =	 830129					[对应sbillmodedetail表的 mode_code]
+state                =	 0						[默认为0]
+note                 =	 电渠准后付中港套餐1GB($118)
+
+
+[sbillmodedetail_1]
+owner_type           =	 0           
+region_code          =	 0						[默认填0]
+detail_code          =	 830129      
+detail_type          =	 0						[0表示detail_code是记账资费ID，1表示是月租代码]
+mode_code            =	 830129					[对应pd_transprodprc表的prod_prc]
+fav_order            =	 1           
+mode_time            =	 0           
+time_flag            =	 0           
+begin_time           =	 20180301000000
+end_time             =	 20500101000000
+eff_time             =	 20180301000000
+exp_time             =	 20500101000000
+
+[sbillmodedetail_2]
+owner_type           =	 0           
+region_code          =	 0						[默认填0]
+detail_code          =	 830129      
+detail_type          =	 0						[0表示detail_code是记账资费ID，1表示是月租代码]
+mode_code            =	 830129					[对应pd_transprodprc表的prod_prc]
+fav_order            =	 1           
+mode_time            =	 0           
+time_flag            =	 0           
+begin_time           =	 20180301000000
+end_time             =	 20500101000000
+eff_time             =	 20180301000000
+exp_time             =	 20500101000000
 
