@@ -3,8 +3,6 @@
 subplanid = 
 note = 
 feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
-Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
-user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
 chat_types           =	 *			[对应chat_type_info表 chat_type]
 fee_types            =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=1配置的记录]
 call_types           =	 *			[　01-主叫，02-被叫，03-呼转，]
@@ -21,8 +19,6 @@ billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 subplanid = 
 note = 
 feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
-Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
-user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
 chat_types           =	 *			[对应chat_type_info表 chat_type]
 fee_types            =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=1配置的记录]
 call_types           =	 *			[　01-主叫，02-被叫，03-呼转，]
@@ -39,8 +35,6 @@ billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 subplanid = 
 note = 
 feetypes             =	 10000000	[10000000-基本费，01000000-长途费，00100000-信息费]
-Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
-user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
 chat_types           =	 *			[对应chat_type_info表 chat_type]
 fee_types            =	 *			[对端号码归属地类型，roam_fee_types表commpare_flag=1配置的记录]
 call_types           =	 *			[　01-主叫，02-被叫，03-呼转，]
@@ -72,10 +66,8 @@ cross_flag           =	 0			[默认1  0 ：跨阀值不累积  1 ：跨阀值部分也累积，目前
 billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 adjust               =	 11			[在使用使用完之后能续订的要使用'9'连天的，其他'11'就行;1整月 2半月折算 3 首次使用半月  4 单天，5 首次使用单天 6连月  7 包年,8,按天折算，9.连天（按天累计）；11累积量生效失效时间与资费订购生效失效时间一致]
 addtime              =	 *			[adjust=9 以外的都是*]
-user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
-Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
-warnflag             =	 0			[warnflag 默认为0，配置为2，流量用完，RF写特殊工单，工单程序进行自动续订，如果余额充足，自动续订成功，余额不充足，续订失败需要修改订购表，并同步给BSS；CRM必须要选自动续扣，订购属性表'EUB00004=0，AC才能实现自动续扣]
-AOC_flag             =	 1			[AOC_flag=1，跨阈值话单，RF返回AOC_flag字段，通知CF，这是最后一个分片，CF返回网元，流量用完后再来下一个请求。]
+CUG_US_SHARE         =	 None        
+gtblockflag          =	 2			[1 -判断离线打错单错单代码为4010 ，在线返回4010；2-判断离线继续免费，在线返回4010	]
 
 [F431_gs_2]
 subplanid = 
@@ -95,10 +87,8 @@ cross_flag           =	 0			[默认1  0 ：跨阀值不累积  1 ：跨阀值部分也累积，目前
 billrebillflag       =	 0 			[标批二批标识，0-标批，1-二批]
 adjust               =	 11			[在使用使用完之后能续订的要使用'9'连天的，其他'11'就行;1整月 2半月折算 3 首次使用半月  4 单天，5 首次使用单天 6连月  7 包年,8,按天折算，9.连天（按天累计）；11累积量生效失效时间与资费订购生效失效时间一致]
 addtime              =	 *			[adjust=9 以外的都是*]
-user_brands          =	 wb 			[用户品牌，对应 T_PP_MAINPRODPRC_BRAND 表user_brand字段]
-Main_ProdId_Params   =	 450002,450003   [主产品列表，标批时才配置，对应 t_pp_mainprodprc_brand 的prod_prcid_param字段，逗号分隔]
-warnflag             =	 0			[warnflag 默认为0，配置为2，流量用完，RF写特殊工单，工单程序进行自动续订，如果余额充足，自动续订成功，余额不充足，续订失败需要修改订购表，并同步给BSS；CRM必须要选自动续扣，订购属性表'EUB00004=0，AC才能实现自动续扣]
-AOC_flag             =	 1			[AOC_flag=1，跨阈值话单，RF返回AOC_flag字段，通知CF，这是最后一个分片，CF返回网元，流量用完后再来下一个请求。]
+CUG_US_SHARE         =	 None        
+gtblockflag          =	 2			[1 -判断离线打错单错单代码为4010 ，在线返回4010；2-判断离线继续免费，在线返回4010	]
 
 
 [t_pp_subprcplan_1]
@@ -211,14 +201,6 @@ exp_date             =	 20500101000000		[失效时间]
 location             =	 e					[欧分该字段都是0, B漫游香港,C漫游英国,D澳门,E台湾,F新加坡,K漫游美国,e中港,g中港澳台,1大陆归属地（港分）,3省际漫游（港分）,i one套餐漫游地, j 新马泰 ]
 cycle_type           =	 0					[欧美分该字段都是0, 0自然月；1指定天数]
 cycle_day            =	 0					[周期天数,欧分该字段都是0, 如果自然月的话就是0]
-
-
-[t_pp_mainprodprc_brand_1]
-user_brand           =	 oy				[用户品牌,对应t_pp_subprcparam表的参数user_brands配置的参数值，为标批时使用oy-预付费一卡一号 wy-预付费一卡两号 wj-预付费极速卡 oh-后付费一卡一号 wh-后付费一卡两号]
-prod_prcid           =	 HKPMF4DGDHK1U03	[产品资费ID，对应ur_userprc_info的prod_prcid字段]
-prod_prcid_param     =	 830129			[产品资费ID对应的要在 t_pp_subprcparam 表的参数Main_ProdId_Params配置的参数值，为标批时使用]
-billprcid            =	 830129			[记账资费ID，长度一般定为6位，后付费一个资费对应多个记账资费ID时，此处配置与PROD_PRCID_PARAM一致]
-note                 =	 电渠准后付中港套餐1GB($118)
 
 
 [pd_transprodprc_1]

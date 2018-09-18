@@ -21,7 +21,7 @@ class CreateFeePlan:
 		self.prodmode = prodmode
 
 		self.MyConfigParser = MyConfigParser()
-		self.MyConfigParser.read( BASE_MODE_HK )
+		self.MyConfigParser.read( feeplanmodefile )
 		self.subplanid_num = self.GetSubPlanId()
 
 		self.dst_file = open( self.dstfeeplanfilename, 'a' )
@@ -177,7 +177,7 @@ def main():
 		Usage()
 	try:
 		region = sys.argv[1]
-		feeplanmodefile = PUBLIC_PATH + "/" + FEEPLANMODE + "_" + region + ".cfg"
+		feeplanmodefile = PUBLIC_PATH + "/mode_" + region + ".cfg"
 		feeplanlist = sys.argv[2]
 		dstfeeplanfilename = sys.argv[5]
 		planid_num = sys.argv[3]
